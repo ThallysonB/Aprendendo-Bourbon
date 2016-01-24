@@ -1,0 +1,54 @@
+#{$all-button-inputs},
+button,
+  .button {
+  background-color: $action-color;
+  border: 0;
+  border-radius: $base-border-radius;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: $small-spacing $base-spacing;
+  text-decoration: none;
+  transition: background-color $base-duration $base-timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &:hover,
+  &:focus {
+    background-color: $action-color;
+    color: #fff;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      background-color: $action-color;
+    }
+  }
+}
+.button--twitter {
+  @include size(58px);
+  background:#5AA4D4 url(../img/icons-social.svg) -132px 19px no-repeat;
+}
+
+.button--rss {
+  @include size(152px 58px);
+  background:#FFA763 url(../img/icon-rss.svg) 16px center no-repeat;
+  padding-left:50px;
+  margin-left:18px;
+  line-height:38px;
+}
+
+.button--try {
+  border:2px solid $red;
+  background-color:transparent;
+  color:$red;
+}
