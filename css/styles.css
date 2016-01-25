@@ -47,6 +47,10 @@ button,
   height: 58px;
   width: 58px;
   background: #5AA4D4 url(../img/icons-social.svg) -132px 19px no-repeat; }
+  @media screen and (max-width: 480px) {
+    .button--twitter {
+      margin-left: 90px;
+      margin-bottom: 10px; } }
 
 .button--rss {
   height: 58px;
@@ -227,7 +231,7 @@ picture {
   .row-wrapper:nth-child(odd) {
     background: #F2EEDA; }
   .row-wrapper .outer-container {
-    max-width: 68em;
+    max-width: 60em;
     margin-left: auto;
     margin-right: auto; }
     .row-wrapper .outer-container::after {
@@ -259,7 +263,7 @@ body h5 {
 header {
   float: left;
   display: block;
-  margin-right: 2.35765%;
+  margin-right: 4.56432%;
   width: 100%;
   margin-left: 0%;
   height: 72px;
@@ -286,9 +290,9 @@ header {
 article.teaser--top {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-left: 17.05961%;
+  margin-right: 4.56432%;
+  width: 65.14523%;
+  margin-left: 17.42739%;
   float: center;
   display: inline;
   margin-right: 4.56432%;
@@ -337,24 +341,39 @@ article.teaser--top .teaser-image {
 #recent-posts {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 57.35098%;
-  margin-left: 25.58941%;
+  margin-right: 4.56432%;
+  width: 65.14523%;
+  margin-left: 26.14108%;
   padding: 20px 0px 75px 0px; }
   #recent-posts:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    #recent-posts {
+      margin-left: 17.42739%; } }
   #recent-posts h5 {
     margin-top: 40px;
-    text-align: center;
     font-size: 30px;
-    margin-left: -60px; }
+    margin-left: 160px; }
+    @media screen and (max-width: 480px) {
+      #recent-posts h5 {
+        margin-left: 10px; } }
 
 .teaser--recent {
   margin-top: 50px; }
+  @media screen and (max-width: 480px) {
+    .teaser--recent h2 {
+      margin-bottom: 23px; } }
+
+@media screen and (max-width: 480px) {
+  .content-postsrecent {
+    margin-top: 140px; } }
 
 .meta {
   float: right;
   color: #6F6148; }
+  @media screen and (max-width: 480px) {
+    .meta {
+      float: none; } }
 
 .teaser-image-recentposts {
   position: absolute;
@@ -368,14 +387,23 @@ article.teaser--top .teaser-image {
   background-repeat: no-repeat;
   border-radius: 10px;
   margin-bottom: 20px; }
+  @media screen and (max-width: 480px) {
+    .teaser-image-recentposts {
+      float: left;
+      display: block;
+      margin-right: 4.56432%;
+      width: 56.43154%;
+      margin-left: 0%; }
+      .teaser-image-recentposts:last-child {
+        margin-right: 0; } }
 
 /************ Subscribe */
 #subscribe, #recommended-reading {
-  margin-left: 17.05961%;
+  margin-left: 17.42739%;
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
+  margin-right: 4.56432%;
+  width: 65.14523%;
   padding: 48px 0px 45px 0px;
   margin-bottom: 105px;
   background: white;
@@ -385,18 +413,18 @@ article.teaser--top .teaser-image {
 
 #subscribe .note {
   float: left;
-  margin-left: 4.2358em; }
+  margin-left: 40px; }
 #subscribe .follow {
   float: right;
-  margin-right: 4.2358em; }
+  margin-right: 40px; }
 
 /********** ABOUT AUTHOR */
 #author {
-  margin-left: 8.5298%;
+  margin-left: 8.71369%;
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%;
+  margin-right: 4.56432%;
+  width: 82.57261%;
   padding-top: 7%; }
   #author:last-child {
     margin-right: 0; }
@@ -414,11 +442,11 @@ article.teaser--top .teaser-image {
     margin-top: -10px; }
 
 #recommended-reading {
-  margin-left: 8.5298%;
+  margin-left: 8.71369%;
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%; }
+  margin-right: 4.56432%;
+  width: 82.57261%; }
   #recommended-reading:last-child {
     margin-right: 0; }
 
@@ -430,14 +458,14 @@ article.teaser--top .teaser-image {
     position: block;
     margin-left: 100px; }
   #recommended-reading ul {
-    margin-left: 5.8538em; }
+    margin-left: 84px; }
 
 #about {
-  margin-left: 8.5298%;
+  margin-left: 8.71369%;
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%;
+  margin-right: 4.56432%;
+  width: 82.57261%;
   padding: 6% 0; }
   #about:last-child {
     margin-right: 0; }

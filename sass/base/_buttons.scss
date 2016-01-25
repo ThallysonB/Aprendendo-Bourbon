@@ -37,6 +37,11 @@ button,
 .button--twitter {
   @include size(58px);
   background:#5AA4D4 url(../img/icons-social.svg) -132px 19px no-repeat;
+
+      @include media($mobile){
+    margin-left: 90px;
+    margin-bottom: 10px;
+  }
 }
 
 .button--rss {
@@ -45,6 +50,11 @@ button,
   padding-left:50px;
   margin-left:18px;
   line-height:38px;
+  
+    @include media($mobile){
+
+}
+
 }
 
 .button--try {
