@@ -36,27 +36,68 @@ body h5 {
 header {
   @include span-columns(12);
   @include shift(0);
-  height: 72px;
-  display:table;
-  margin-left: 10px;
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #ccc;
+  background: $row-background;
+  z-index: 1;
 
+
+li {
+  display: inline;
+  
+
+}
 
   #logo {
+    @include span-columns(2);
+    @include shift(2);
+    position: relative;
     margin-top: 20px;
     position: static;
     height: 30px;
+
+  @include media($tablet){
+    @include span-columns(2);
+    @include shift(1);
+}
+
+  @include media($mobile){
+  @include span-columns(10);
+  @include shift(1);
+}
+
   }
   
   nav {
-    float:right;
+    @include shift(7);
     line-height: 72px;
-    
+  
+  @include media($tablet){
+  @include span-columns(7);
+  @include shift(1);
+  margin-left: 85px;
+}
+  @include media($mobile){
+  @include span-columns(10);
+  @include shift(1);
+}
+
     & a {
       font-size:18px;
       color: #E3857D;
       text-transform: uppercase;
       margin-right:40px;
-
+  
+  @include media($tablet){
+  font-size: 14px;
+}
+  @include media($mobile){
+  font-size: 13px;
+}
       
       &:last-child {
         margin-right:9px;
@@ -74,9 +115,13 @@ article.teaser--top {
   margin-right: 4.56432%;
   width: 65.14523%;
   margin-left: 17.42739%;
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-top: 130px;
+  margin-bottom: 50px;
 
+  @include media($mobile){
+    margin-top: 160px;
+  }
+}
 h1 {
       font-size: 50px;
       margin-bottom: 10px;
@@ -128,8 +173,16 @@ h1 {
     font-size: 30px;
     margin-left: 160px;
 
-      @include media($mobile){
-        margin-left: 10px;
+    @include media($mobile){
+    @include span-columns(12);
+    @include shift(1);
+    font-size: 25px;
+
+    @include media($tablet){
+    @include span-columns(10);
+    @include shift(1);
+    font-size: 30px;
+      }
     }
   }
 }
@@ -199,7 +252,7 @@ h1 {
 #author {
   @include shift(1);
   @include span-columns(10);
-  padding-top: 7%;
+  padding-top: 110px;
 
  .author-icon {
     float: left;
@@ -227,14 +280,24 @@ h1 {
 #recommended-reading {
   @extend %whitebox;
   background-color: $row-background;
-  margin-top: 25px;
+  margin-top: 70px;
   
   h5 {
     position: block;
     margin-left: 100px;
+
+  @include media($mobile){
+  @include span-columns(10);
+  @include shift(1);
+}
   }
   ul {
     margin-left:($column+$gutter);
+
+  @include media($mobile){
+  @include span-columns(10);
+  @include shift(1);
+}
   }
 }
 #about {
@@ -264,5 +327,6 @@ h1 {
 /******* FOOTER */
 footer {
   margin-top: 15px;
+  margin-bottom: 15px;
   text-align: center;
 }

@@ -11,3 +11,4 @@ $medium-screen: 600px;
 $large-screen: 900px;
 
 $mobile: new-breakpoint(max-width 480px, 12);
+$tablet: new-breakpoint(max-width 767px, 12);

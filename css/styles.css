@@ -1,5 +1,18 @@
 @charset "UTF-8";
 /***** 3rd Party Components *****/
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0px;
+  margin-right: 0px; }
+
 html {
   box-sizing: border-box; }
 
@@ -49,8 +62,23 @@ button,
   background: #5AA4D4 url(../img/icons-social.svg) -132px 19px no-repeat; }
   @media screen and (max-width: 480px) {
     .button--twitter {
-      margin-left: 90px;
-      margin-bottom: 10px; } }
+      float: left;
+      display: block;
+      margin-right: 4.56432%;
+      width: 47.71784%;
+      margin-left: 26.14108%;
+      margin-bottom: 15px; }
+      .button--twitter:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) and (max-width: 767px) {
+    .button--twitter {
+      float: left;
+      display: block;
+      margin-right: 4.56432%;
+      width: 30.29046%;
+      margin-left: 34.85477%; }
+      .button--twitter:last-child {
+        margin-right: 0; } }
 
 .button--rss {
   height: 58px;
@@ -59,6 +87,24 @@ button,
   padding-left: 50px;
   margin-left: 18px;
   line-height: 38px; }
+  @media screen and (max-width: 480px) {
+    .button--rss {
+      float: left;
+      display: block;
+      margin-right: 4.56432%;
+      width: 47.71784%;
+      margin-left: 26.14108%; }
+      .button--rss:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) and (max-width: 767px) {
+    .button--rss {
+      float: left;
+      display: block;
+      margin-right: 4.56432%;
+      width: 82.57261%;
+      margin-left: 17.42739%; }
+      .button--rss:last-child {
+        margin-right: 0; } }
 
 .button--try {
   border: 2px solid #E3857D;
@@ -266,23 +312,81 @@ header {
   margin-right: 4.56432%;
   width: 100%;
   margin-left: 0%;
-  height: 72px;
-  display: table;
-  margin-left: 10px; }
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #ccc;
+  background: #F2EEDA;
+  z-index: 1; }
   header:last-child {
     margin-right: 0; }
+  header li {
+    display: inline; }
   header #logo {
+    float: left;
+    display: block;
+    margin-right: 4.56432%;
+    width: 12.86307%;
+    margin-left: 17.42739%;
+    position: relative;
     margin-top: 20px;
     position: static;
     height: 30px; }
+    header #logo:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 767px) {
+      header #logo {
+        float: left;
+        display: block;
+        margin-right: 4.56432%;
+        width: 12.86307%;
+        margin-left: 8.71369%; }
+        header #logo:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      header #logo {
+        float: left;
+        display: block;
+        margin-right: 4.56432%;
+        width: 82.57261%;
+        margin-left: 8.71369%; }
+        header #logo:last-child {
+          margin-right: 0; } }
   header nav {
-    float: right;
+    margin-left: 60.99585%;
     line-height: 72px; }
+    @media screen and (max-width: 767px) {
+      header nav {
+        float: left;
+        display: block;
+        margin-right: 4.56432%;
+        width: 56.43154%;
+        margin-left: 8.71369%;
+        margin-left: 85px; }
+        header nav:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 480px) {
+      header nav {
+        float: left;
+        display: block;
+        margin-right: 4.56432%;
+        width: 82.57261%;
+        margin-left: 8.71369%; }
+        header nav:last-child {
+          margin-right: 0; } }
     header nav a {
       font-size: 18px;
       color: #E3857D;
       text-transform: uppercase;
       margin-right: 40px; }
+      @media screen and (max-width: 767px) {
+        header nav a {
+          font-size: 14px; } }
+      @media screen and (max-width: 480px) {
+        header nav a {
+          font-size: 13px; } }
       header nav a:last-child {
         margin-right: 9px; }
 
@@ -298,10 +402,13 @@ article.teaser--top {
   margin-right: 4.56432%;
   width: 65.14523%;
   margin-left: 17.42739%;
-  margin-top: 50px;
+  margin-top: 130px;
   margin-bottom: 50px; }
   article.teaser--top:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    article.teaser--top {
+      margin-top: 160px; } }
 
 h1 {
   font-size: 50px;
@@ -356,7 +463,24 @@ article.teaser--top .teaser-image {
     margin-left: 160px; }
     @media screen and (max-width: 480px) {
       #recent-posts h5 {
-        margin-left: 10px; } }
+        float: left;
+        display: block;
+        margin-right: 4.56432%;
+        width: 100%;
+        margin-left: 8.71369%;
+        font-size: 25px; }
+        #recent-posts h5:last-child {
+          margin-right: 0; } }
+  @media screen and (max-width: 480px) and (max-width: 767px) {
+    #recent-posts h5 {
+      float: left;
+      display: block;
+      margin-right: 4.56432%;
+      width: 82.57261%;
+      margin-left: 8.71369%;
+      font-size: 30px; }
+      #recent-posts h5:last-child {
+        margin-right: 0; } }
 
 .teaser--recent {
   margin-top: 50px; }
@@ -425,7 +549,7 @@ article.teaser--top .teaser-image {
   display: block;
   margin-right: 4.56432%;
   width: 82.57261%;
-  padding-top: 7%; }
+  padding-top: 110px; }
   #author:last-child {
     margin-right: 0; }
   #author .author-icon {
@@ -453,12 +577,30 @@ article.teaser--top .teaser-image {
 /************ Recommended Reading */
 #recommended-reading {
   background-color: #F2EEDA;
-  margin-top: 25px; }
+  margin-top: 70px; }
   #recommended-reading h5 {
     position: block;
     margin-left: 100px; }
+    @media screen and (max-width: 480px) {
+      #recommended-reading h5 {
+        float: left;
+        display: block;
+        margin-right: 4.56432%;
+        width: 82.57261%;
+        margin-left: 8.71369%; }
+        #recommended-reading h5:last-child {
+          margin-right: 0; } }
   #recommended-reading ul {
     margin-left: 84px; }
+    @media screen and (max-width: 480px) {
+      #recommended-reading ul {
+        float: left;
+        display: block;
+        margin-right: 4.56432%;
+        width: 82.57261%;
+        margin-left: 8.71369%; }
+        #recommended-reading ul:last-child {
+          margin-right: 0; } }
 
 #about {
   margin-left: 8.71369%;
@@ -489,6 +631,7 @@ article.teaser--top .teaser-image {
 /******* FOOTER */
 footer {
   margin-top: 15px;
+  margin-bottom: 15px;
   text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */
