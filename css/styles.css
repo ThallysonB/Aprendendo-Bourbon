@@ -458,9 +458,15 @@ article.teaser--top .teaser-image {
     #recent-posts {
       margin-left: 17.42739%; } }
   #recent-posts h5 {
+    float: left;
+    display: block;
+    margin-right: 4.56432%;
+    width: 91.28631%;
+    margin-left: 17.42739%;
     margin-top: 40px;
-    font-size: 30px;
-    margin-left: 160px; }
+    font-size: 30px; }
+    #recent-posts h5:last-child {
+      margin-right: 0; }
     @media screen and (max-width: 480px) {
       #recent-posts h5 {
         float: left;
@@ -476,9 +482,9 @@ article.teaser--top .teaser-image {
       float: left;
       display: block;
       margin-right: 4.56432%;
-      width: 82.57261%;
+      width: 100%;
       margin-left: 8.71369%;
-      font-size: 30px; }
+      font-size: 25px; }
       #recent-posts h5:last-child {
         margin-right: 0; } }
 

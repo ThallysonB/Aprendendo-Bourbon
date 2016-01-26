@@ -169,9 +169,10 @@ h1 {
       @include shift(2);
     }
   & h5 {
+    @include span-columns(11);
+    @include shift(2);
     margin-top: 40px;
     font-size: 30px;
-    margin-left: 160px;
 
     @include media($mobile){
     @include span-columns(12);
@@ -179,9 +180,9 @@ h1 {
     font-size: 25px;
 
     @include media($tablet){
-    @include span-columns(10);
+    @include span-columns(12);
     @include shift(1);
-    font-size: 30px;
+    font-size: 25px;
       }
     }
   }
